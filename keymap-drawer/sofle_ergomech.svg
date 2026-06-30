@@ -67,19 +67,27 @@ text.footer {
     paint-order: stroke;
 }
 
-/* styling for combo tap, and key hold/shifted label text */
-text.combo, text.hold, text.shifted {
+/* styling for combo tap, and key non-tap label text */
+text.combo, text.hold, text.shifted, text.left, text.right, text.tl, text.tr, text.bl, text.br {
     font-size: 11px;
 }
 
-text.hold {
+text.hold, text.bl, text.br {
     text-anchor: middle;
     dominant-baseline: auto;
 }
 
-text.shifted {
+text.shifted, text.tl, text.tr {
     text-anchor: middle;
     dominant-baseline: hanging;
+}
+
+text.left, text.tl, text.bl {
+    text-anchor: start;
+}
+
+text.right, text.tr, text.br {
+    text-anchor: end;
 }
 
 text.layer-activator {
@@ -87,7 +95,7 @@ text.layer-activator {
 }
 
 /* styling for hold/shifted label text in combo box */
-text.combo.hold, text.combo.shifted {
+text.combo.hold, text.combo.shifted, text.combo.left, text.combo.right {
     font-size: 8px;
 }
 
@@ -116,8 +124,8 @@ path.combo {
 }
 /* End Tabler Icons Cleanup */
 </style>
-<g transform="translate(30, 0)" class="layer-Game">
-<text x="0" y="28" class="label" id="Game">Game:</text>
+<g transform="translate(30, 0)" class="layer-GAME">
+<text x="0" y="28" class="label" id="GAME">GAME:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 45)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -165,8 +173,8 @@ path.combo {
 </g>
 <g transform="translate(812, 45)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#Main">
-<text x="0" y="0" class="key tap layer-activator">Main</text>
+<a href="#MAIN">
+<text x="0" y="0" class="key tap layer-activator">MAIN</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(28, 101)" class="key keypos-12">
@@ -379,13 +387,13 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 521)" class="layer-Main">
-<text x="0" y="28" class="label" id="Main">Main:</text>
+<g transform="translate(30, 521)" class="layer-MAIN">
+<text x="0" y="28" class="label" id="MAIN">MAIN:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 45)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#Game">
-<text x="0" y="0" class="key tap layer-activator">Game</text>
+<a href="#GAME">
+<text x="0" y="0" class="key tap layer-activator">GAME</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(84, 45)" class="key keypos-1">
@@ -430,8 +438,8 @@ path.combo {
 </g>
 <g transform="translate(812, 45)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#Function">
-<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
+<a href="#FXN">
+<text x="0" y="0" class="key tap layer-activator">FXN</text>
 </a></g>
 <g transform="translate(28, 101)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -645,8 +653,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1042)" class="layer-Function">
-<text x="0" y="28" class="label" id="Function">Function:</text>
+<g transform="translate(30, 1042)" class="layer-FXN">
+<text x="0" y="28" class="label" id="FXN">FXN:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 45)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -872,8 +880,8 @@ path.combo {
 </g>
 <g transform="translate(658, 381)" class="key keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#Bluetooth">
-<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 78%">Bluetooth</tspan></text>
+<a href="#BT_MODE">
+<text x="0" y="0" class="key tap layer-activator">BT_MODE</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(714, 381)" class="key trans keypos-60">
@@ -894,13 +902,13 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1562)" class="layer-Bluetooth">
-<text x="0" y="28" class="label" id="Bluetooth">Bluetooth:</text>
+<g transform="translate(30, 1562)" class="layer-BT_MODE">
+<text x="0" y="28" class="label" id="BT_MODE">BT_MODE:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 45)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#Main">
-<text x="0" y="0" class="key tap layer-activator">Main</text>
+<a href="#MAIN">
+<text x="0" y="0" class="key tap layer-activator">MAIN</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(84, 45)" class="key keypos-1">
@@ -931,35 +939,35 @@ path.combo {
 <g transform="translate(532, 45)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">BT</tspan><tspan x="0" dy="1.2em">DISC</tspan>
+<tspan x="0" dy="-0.9em">BT</tspan><tspan x="0" dy="1.2em">DISC</tspan>
 </text>
 <text x="0" y="24" class="key hold">0</text>
 </g>
 <g transform="translate(588, 31)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">BT</tspan><tspan x="0" dy="1.2em">DISC</tspan>
+<tspan x="0" dy="-0.9em">BT</tspan><tspan x="0" dy="1.2em">DISC</tspan>
 </text>
 <text x="0" y="24" class="key hold">1</text>
 </g>
 <g transform="translate(644, 28)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">BT</tspan><tspan x="0" dy="1.2em">DISC</tspan>
+<tspan x="0" dy="-0.9em">BT</tspan><tspan x="0" dy="1.2em">DISC</tspan>
 </text>
 <text x="0" y="24" class="key hold">2</text>
 </g>
 <g transform="translate(700, 36)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">BT</tspan><tspan x="0" dy="1.2em">DISC</tspan>
+<tspan x="0" dy="-0.9em">BT</tspan><tspan x="0" dy="1.2em">DISC</tspan>
 </text>
 <text x="0" y="24" class="key hold">3</text>
 </g>
 <g transform="translate(756, 45)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">BT</tspan><tspan x="0" dy="1.2em">DISC</tspan>
+<tspan x="0" dy="-0.9em">BT</tspan><tspan x="0" dy="1.2em">DISC</tspan>
 </text>
 <text x="0" y="24" class="key hold">4</text>
 </g>
@@ -1035,8 +1043,7 @@ path.combo {
 <g transform="translate(700, 148)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">BT</tspan><tspan x="0" dy="1.2em">CLR</tspan>
-<tspan x="0" dy="1.2em">ALL</tspan>
+<tspan x="0" dy="-1.2em">BT</tspan><tspan x="0" dy="1.2em">CLR</tspan><tspan x="0" dy="1.2em">ALL</tspan>
 </text>
 </g>
 <g transform="translate(756, 157)" class="key keypos-34">
